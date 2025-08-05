@@ -1,6 +1,8 @@
 import telebot
 import json
 import os
+port = int(os.environ.get("PORT", 10000))
+app.run(host="0.0.0.0", port=port)
 import schedule
 import threading
 import time
@@ -72,4 +74,5 @@ threading.Thread(target=scheduler).start()
 # 🚀 Бот активен
 bot.remove_webhook()
 bot.polling(none_stop=true)
+
 
