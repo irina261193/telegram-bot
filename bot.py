@@ -70,4 +70,6 @@ def scheduler():
 threading.Thread(target=scheduler).start()
 
 # 🚀 Бот активен
-bot.polling()
+bot.remove_webhook()
+bot.polling(none_stop=true)
+
